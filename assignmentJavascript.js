@@ -7,14 +7,15 @@ function kilometerToMeter(n) {
   }
 }
 
-function budgetCalculator(n) {
-  //   var watch = 50;
-  //   var phone = 100;
-  //   var laptop = 500;
-  var watch = n * 50;
-  var phone = n * 100;
-  var laptop = n * 500;
-  var total = watch + phone + laptop;
+function budgetCalculator(watch = 0, phone = 0, laptop = 0) {
+  if (priceOfwatch < 0 || priceOfphone < 0 || priceOflaptop < 0) {
+    return 0;
+  } else {
+    var priceOfwatch = watch * 50;
+    var priceOfphone = phone * 100;
+    var priceOflaptop = laptop * 500;
+    var total = priceOfwatch + priceOfphone + priceOflaptop;
+  }
   return total;
 }
 
@@ -57,8 +58,8 @@ var result = kilometerToMeter(12);
 console.log("Kilometer to meter convertion :", result);
 
 // Budget Calculator -----------------------
-var result = budgetCalculator(5);
-console.log("Total Budget:", result);
+var result = budgetCalculator(1, 2, 3);
+console.log("Total:", result);
 
 // Hotel Cost ------------
 var result = hotelCost(21);
