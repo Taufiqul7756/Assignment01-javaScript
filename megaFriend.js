@@ -1,5 +1,5 @@
-function megaFriend(string) {
-  var str = string.split(" ");
+function megaFriend(friendsName) {
+  var str = friendsName.split(" ");
   var longest = 0;
   var word = null;
   for (var i = 0; i < str.length; i++) {

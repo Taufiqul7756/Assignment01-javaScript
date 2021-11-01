@@ -1,6 +1,6 @@
-function kilometerToMeter(n) {
-  if (n > 0) {
-    var cal = n * 1000;
+function kilometerToMeter(Kilometer) {
+  if (Kilometer > 0) {
+    var cal = Kilometer * 1000;
     return cal;
   } else {
     return "distance cant negative";
